@@ -58,7 +58,7 @@ export default function Bugs() {
                                         const data = extractData(item.message);
                                         return (
                                             !(showResolved && item.resolved) &&
-                                            <tr key={item.id} className={((index % 2) == 0 ? "bg-theme-pink hover:bg-theme-light-pink " : "bg-theme-white hover:bg-gray-50")}>
+                                            <tr key={item.id} className={((index % 2) === 0 ? "bg-theme-pink hover:bg-theme-light-pink " : "bg-theme-white hover:bg-gray-50")}>
                                                 <td className="text-xs px-4 py-3">
                                                     {index}
                                                 </td>

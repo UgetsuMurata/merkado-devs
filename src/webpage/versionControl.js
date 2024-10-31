@@ -19,7 +19,7 @@ export default function VersionControl() {
 
     useEffect(() => {
         setHasChanges(newUpdatesVersion !== currentUpdatesData?.version || newUpdatesUrl !== currentUpdatesData?.url);
-    }, [newUpdatesVersion, newUpdatesUrl]);
+    }, [newUpdatesVersion, newUpdatesUrl,currentUpdatesData?.version, currentUpdatesData?.url]);
 
     return (
         <Sidebar>
